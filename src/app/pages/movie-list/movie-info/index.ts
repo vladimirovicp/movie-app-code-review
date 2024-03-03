@@ -19,6 +19,7 @@ interface Drops extends MovieInfoPropsFields, MovieInfoPropsFns {}
 class MovieInfoComponent extends BaseComponent {
   private readonly favoriteIcon: BaseComponent;
   constructor({ movie, onMakeFavorite }: Drops) {
+    console.log(movie);
     super(
       { className: styles.info },
       ImageWithPlaceholder({
